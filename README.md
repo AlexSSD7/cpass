@@ -32,7 +32,7 @@ Assuming that you have an existing Go installation, you should be able to access
 
 You can run the following command to build and install `cpass`:
 ```sh
-go install github.com/AlexSSD7/cpass
+go install github.com/AlexSSD7/cpass@latest
 ```
 
 After that, you should be able to run `cpass`, or `~/go/bin/cpass` if you have not added `~/go/bin` to `$PATH`.
