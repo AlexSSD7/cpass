@@ -2,15 +2,17 @@
 
 A minimalist CLI random password generator focusing on convenience and security.
 
-<!-- TODO: Add screenshot -->
+![Screenshot of the cpass usage example](./assets/screenshot.png)
 
-## Convenience features
+# ⭐ Features
+
+## Convenience
 
 `cpass` generates passwords the way you would do it for your own convenience.
 
 When generating a password, `cpass` takes a random lowercase string as a base and then applies modifications like making some letters uppercase, adding digits, or adding special characters.
 
-## Security features
+## Security
 
 `cpass` is coded with a security-first mindset. Upon generating the password, `cpass` will provide you with a security report containing minimum and maximum entropy bits, and the average of both being the realistic strength of the password.
 
@@ -18,14 +20,16 @@ When generating a password, `cpass` takes a random lowercase string as a base an
 - **Maximum entropy** bits also imply that the attacker is aware of you using this utility, but in this case, it is assumed that the attacker supposes that you used random parameters.
 - ***Realistic* entropy** is the average between both. However, if the attacker doesn't know that this specific utility was used to generate the password, the absolute entropy is going to be higher.
 
-# Security Considerations
+# 🔒 Security Considerations
 ## Parameter Choice
 
 Please do not copy someone's parameters or reuse existing ones. It's vital to ensure that the parameters are not easy to guess to maximize the security.
 
+# 💿 Installation
+
 <!-- TODO: Add installation instructions -->
 
-# Usage
+# 🔧 Usage
 
 Using `cpass` is as easy as starting it up. `cpass` is fully interactive, meaning that there are no command line options to worry about.
 
