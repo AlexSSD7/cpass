@@ -27,13 +27,38 @@ Please do not copy someone's parameters or reuse existing ones. It's vital to en
 
 # 💿 Installation
 
-<!-- TODO: Add installation instructions -->
+## Using Go's `go install`
+Assuming that you have an existing Go installation, you should be able to access the `go install` command which will build the project from source and put it to `$GOPATH/bin` directory. By default, `$GOPATH` is `$HOME/go`.
+
+You can run the following command to build and install `cpass`:
+```sh
+go install github.com/AlexSSD7/cpass
+```
+
+After that, you should be able to run `cpass`, or `~/go/bin/cpass` if you have not added `~/go/bin` to `$PATH`.
+
+## Package managers
+
+TODO.
+
+## Prebuilt binaries
+
+You can find prebuilt binaries in [cpass GitHub Releases](https://github.com/AlexSSD7/cpass/releases).
+
+## Build from Source
+Clone the repository using `git` and run `go build` to build the `cpass` binary.
+
+```sh
+git clone https://github.com/AlexSSD7/cpass
+cd cpass
+go build
+```
 
 # 🔧 Usage
 
 Using `cpass` is as easy as starting it up. `cpass` is fully interactive, meaning that there are no command line options to worry about.
 
-Upon the startup, you will be asked to supply parameters to use when generating the password. Here is an example of how everything is going to look like:
+Upon the startup, you will be asked to supply the parameters to use when generating the password. Here is an example of how everything is going to look like:
 ```
 user@pc:~$ cpass
 cpass v0.1.0 linux/amd64 go1.21.2. Copyright (c) 2023 The cpass Authors. Distributed under GNU GPL v3, this program comes with ABSOLUTELY NO WARRANTY.
